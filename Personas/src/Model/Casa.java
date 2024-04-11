@@ -1,4 +1,4 @@
-
+package Model;
 import java.util.*;
 
 /**
@@ -24,63 +24,62 @@ public class Casa {
      * @param numHabitaciones   			El numero de habitacione de la casa
      * @param metrosCuadrados			Los metros cuadrados de la casa
      */
-    public void Casa(String direccion, int numHabitaciones, int metrosCuadrados) {
+    public  Casa(String direccion, int numHabitaciones, int metrosCuadrados) {
         this.Direccion= direccion;
         this.numHabitaciones = numHabitaciones;
         this.metrosCuadrados = metrosCuadrados;
     }
 
     /**
-     * @return
+     * @return obtener direccion
      */
     public String getDireccion() {
-        // TODO implement here
-        return "";
+       
+        return this.Direccion;
     }
 
     /**
-     * @return
+     * @return  obtener num de habitaciones de la casa
      */
     public int getNumHabitaciones() {
-        // TODO implement here
-        return 0;
+        
+        return this.numHabitaciones;
     }
 
     /**
-     * @return
+     * @return los metros cuadrados de la casa
      */
     public int getMetrosCuadrados() {
-        // TODO implement here
-        return 0;
+        
+        return this.metrosCuadrados;
     }
 
     /**
-     * @param direccion
+     *  direccion de la casa
      */
     public void setDireccion(String direccion) {
-        // TODO implement here
+        this.Direccion=direccion;
     }
 
     /**
-     * @param numHabitaciones
+     * @param numHabitaciones  El numero de habitaciones de la casa
      */
     public void setNumHabitaciones(int numHabitaciones) {
-        // TODO implement here
+        this.numHabitaciones=numHabitaciones;
     }
 
     /**
-     * @param metrosCuadrados
+     * @param metrosCuadrados obtener los metros cuadrados de la casa
      */
     public void setMetrosCuadrados(int metrosCuadrados) {
-        // TODO implement here
+        this.metrosCuadrados=metrosCuadrados;
     }
 
     /**
-     * @return
+     * @return una cadena con la direccion, el numero de habitaciones y los m cuadrado de la casa
      */
     public String toString() {
-        // TODO implement here
-        return "";
+        return Direccion + " " + numHabitaciones + " " + metrosCuadrados;
     }
 
 }
